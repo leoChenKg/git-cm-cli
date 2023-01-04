@@ -7,8 +7,7 @@
     "cm": "./src/index.js"
   },
   "scripts": {
-    "cm": "cz",
-    "prepare": "husky install"
+    "cm": "cz"
   },
   "keywords": [
     "git",
