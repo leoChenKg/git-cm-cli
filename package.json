@@ -1,15 +1,20 @@
 {
-  "name": "cm-cli",
-  "version": "1.0.0",
+  "name": "git-cm-cli",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
     "cm": "./src/index.js"
   },
   "scripts": {
-    "cm": "cz"
+    "cm": "cz",
+    "prepare": "husky install"
   },
-  "keywords": [],
+  "keywords": [
+    "git",
+    "commit",
+    "tool"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -21,5 +26,19 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leoChenKg/git-cm-cli.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "add": "^2.0.6",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0"
+  },
+  "peerDependencies": {
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0"
+  }
 }
